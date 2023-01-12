@@ -1,0 +1,131 @@
+:root{
+    --branco-principal:#ffffff;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul:#167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal:'Inter', serif;
+}
+
+body{
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    height: 100vh;
+}
+
+.principal{
+    background: url(./img/Background.png) no-repeat ;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao{
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.botao_secundario{
+    background-color: transparent;
+    border: solid 2px var(--branco-principal);
+}
+
+.container__imagem{
+    margin: 1em 0 2em 0;
+}
+
+.container__aviso{
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__caixa{
+    margin: 0 6em;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 6em;
+
+}
+
+.secundario__imagem{
+    width: 40vw;
+}
+
+.container__descricao{
+    margin: 0 3em;
+    /* text-align: center; */
+}
+
+.descricao__titulo{
+    font-size: 48px;
+    font-weight: 700;
+    margin: 1em 0 0;
+}
+
+.descricao__texto{
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao{
+    display: inline-block;
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos__titulo{
+    font-size: 48px;
+}
+
+.dispositivos__lista{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 5em 0;
+}
+
+.lista__item{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+footer{
+    text-align: center;
+}
+
+.footer__links{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 3em 0;
+}
+
+.link__item{
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+
+.rodape__texto{
+    color: var(--cinza-secundario);
+}
